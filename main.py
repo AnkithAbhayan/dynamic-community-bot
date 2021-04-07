@@ -7,7 +7,7 @@ import json
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
-with open("data.json","r") as JsonFile:
+with open("src/data.json","r") as JsonFile:
     data = json.load(JsonFile)
 
 bot = commands.Bot(command_prefix='$')
